@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="English">
+<header >
+    <meta charset="UTF-8">
+    <meta name="viewport", content="width=device-width, initial-scale=1.0">
+    <title>DRUG STATION</title>
+
+    <!-- icon --> 
+      <link rel="icon" type="image/png" href="https://i.pinimg.com/736x/0a/1d/e6/0a1de6e14aa43d9858cb140d4534d5e9.jpg">
+    <!--  external css link -->
+     <link rel="stylesheet" href="style.css">
+
+</header>
+<body>
+    <h1>DRUG STATION</h1>
+        <h2 style="text-align:center">Welcome to Drug Station, Your Trusted Partner in Health</h2>
+        <p>At Drug Station, we are committed to making healthcare more accessible, reliable, and affordable. Our platform provides easy access to essential medicines, health products, and trusted information to support your well-being.</p> <br>
+
+         <Section id="media" >
+             <!-- media -->
+             <img  src="https://i.pinimg.com/736x/db/e5/71/dbe5711b4c1979d7a4f5e168092167d6.jpg" alt="welcome" width="100px" height="50px"> 
+        </Section> <br><br>
+        <Section class="section">
+            <!--Signup form -->
+            <h3>Create an account</h3> <br>
+            <fieldset class="card">
+                 <legend>Create an account</legend> <br>
+                <label for="name">Name:</label> 
+                <input type="name" id="name"  name="name" Placeholder="Username" required> <br><br>
+                <label for="email">Email:</label> 
+                <input type="email" id="email"  name="email" placeholder="user@email.com" required> <br> <br>
+                <label for="Password">Password:</label> 
+                <input type="Password" id="Password"  name="Password" Placehoder="Password" required> <br> <br>
+                <label for="Address">Address:</label>
+                <input type="text" id="zip"  pattern="[0-9]{5}" title="enter a 5 digit code" placeholder="40200" required> <br><br>
+                <label for>Country:</label>
+                    <select id="country" name="country" required>
+                        <option value="">Select your country</option>
+                        <option>Kenya</option>
+                        <option value="USA">USA</option>
+                        <option value="UK">UK</option>
+                        <option value="India">India</option>
+                        <option value="Nigeria">Nigeria</option>
+                    </select> <br> <br>
+                <button type="submit" class="grab-btn">Signup</button>
+            </fieldset> <br>
+        
+            <!-- log in -->
+             <h3>Sign in</h3> <br>
+             <fieldset class="card">
+                 <legend>Sign in</legend> <br>
+                 <label for="name">Name:</label> 
+                <input type="name" id="name"  name="name" Placeholder="Username" autocomplete="username" required> <br><br>
+                <label for="Password">Password:</label> 
+                <input type="Password" id="Password"  name="Password" Placehoder="Password" autocomplete="current-password" required> <br> <br>
+                 <button type="submit" class="grab-btn">Sign in</button>
+        </Section>
+             </fieldset> 
+        </Section>
+        <!-- lists -->
+         <!-- tables -->
+          <Section id="grid flow">
+            <h2 style="color:#064853; text-align:center"> PREVIEW </h2> <br>
+            <table border="2" >
+                <caption> Drug information </caption>
+                <thead>
+                    <tr>
+                        <th>Drug</th>
+                        <th>Drug uses</th>
+                        <th>Drug brandname</th>
+                        <th>Drug mode of action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Paracetamol</td>
+                        <td>
+                            <ul type="Square">
+                                <li>Migraine</li>
+                                <li>Post-vaccination fever in children</li>
+                            </ul>
+                        </td>
+                        <td>Panadol, Tylenol, Calpol, Action</td>
+                        <td>Inhibits prostaglandin synthesis in the CNS by blocking cyclooxygenase (COX) enzymes,</td>
+                    </tr>
+                    <tr>
+                      <td>Metformin</td>
+                        <td>Diabetes tpe 2</td>
+                        <td>Glucophage, Dianorm, Obimet, Fortamet, Glumetza</td>
+                        <td>Activates AMP-activated protein kinase (AMPK)
+                             <ul type="Square">
+                                <li>↓ Hepatic glucose production (gluconeogenesis)</li>
+                                <li>↑ Peripheral glucose uptake and insulin sensitivity</li>
+                                <li>↓ Intestinal glucose absorption</li>
+                            </ul>
+                        </td>
+                     
+                    </tr>
+                </tbody>
+            </table>
+</Section> 
+<section id="button">
+<button id="quiz" class="grab-btn"  onclick="change()">Drug quiz</button> 
+</section> 
+<!-- drug of the day -->
+  <section class="section">
+  <div class="card">
+    <h3 >DRUG OF THE DAY</h3>
+    <dl>
+        <dt >Amoxicilin</dt>
+        <dd >It used when one has an infection </dd>
+        <dd style="text-decoration: underline;"><a  href="https://go.drugbank.com/drugs/DB01060" class="btn-link" style="color: aliceblue;">Click this link for more info</a></dd>
+    </dl>
+  </div>
+  <div class="card">
+    <h3 class="h3" >DRUG OF THE DAY</h3>
+    <dl>
+        <dt >Concor</dt>
+        <dd >It used when one has hypertension</dd>
+        <dd style="text-decoration: underline;"><a  href="https://go.drugbank.com/drugs/DB00612" class="btn-link" style="color: aliceblue;">Click this link for more info</a></dd>
+    </dl>
+  </div>
+  <div class="card" class="change">
+    <h3 >DRUG OF THE DAY</h3>
+    <dl>
+        <dt >Paracetamol</dt>
+        <dd >It used when one has headache or fever</dd>
+        <dd style="text-decoration: underline;"><a  href="https://go.drugbank.com/drugs/DB00316" class="btn-link" style="color: aliceblue;">Click this link for more info</a></dd>
+    </dl>
+  </div>
+  </section>
+  <!-- A section is to be added uing javascript -->
+ <div id="container"></div>
+ </section>  <br>
+
+
+ <script src="script.js"></script>
+</body>
+
+
+<footer class="footer">
+    <!-- links -->
+     <h3 style="color:azure">Thank you for visiting!</h3>
+     <p style="color:azure">We’re glad you stopped by. Want to keep exploring and learning?</p>
+     <button class="btn-link" style="color:azure" href="https://go.drugbank.com/drugs"> click here to learn more about drugs</button><br>
+     <p style="color:azure">&copy; Cheryl 2025, All rights reserved </p>
+</footer>
+</html>
